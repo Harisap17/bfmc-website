@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home: BFMC2025 Braking Bad</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="./images/logo_bb.png" alt="Braking Bad Logo" class="logo">
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#PoweredBy">Powered-By</a></li>
+            <li><a href="#bfmc">BFMC</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li class="ctn"><a href="#contact">Contact</a></li>
+        </ul>
+        <img src="./images/menu-btn.png" alt="Menu Button" class="menu-btn">
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-content">
+            <h2>BOSCH Future Mobility Challenge 2025</h2>
+            <div class="line"></div>
+            <h1>Braking Bad</h1>
+            <a href="#about-us" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Powered By -->
+    <section id="PoweredBy" class="powered-by">
+        <div class="title">
+            <h1>Powered By</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/logo_uoc.jpg" alt="University of Crete">
+                <h4>University of Crete</h4>
+                <p>All members of our team are currently students of the Department of Computer Science, from the University of Crete.</p>
+                <a href="https://www.csd.uoc.gr/CSD/index.jsp?lang=en" target="_blank" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./images/logo_forth.png" alt="FORTH logo">
+                <h4>ICS - FORTH</h4>
+                <p>All members of our team are currently involved in developing projects here at the Computer Vision and Robotics Laboratory.</p>
+                <a href="https://www.ics.forth.gr/" target="_blank" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BFMC -->
+    <section id="bfmc" class="bfmc">
+        <div class="bfmc-content">
+            <h1>BOSCH Future Mobility Challenge</h1>
+            <div class="line"></div>
+            <p>Bosch Future Mobility Challenge (BFMC) is an international autonomous driving and connectivity competition for Bachelor and Master students, annually held in Cluj-Napoca, Romania.</p>
+            <a href="https://boschfuturemobility.com/" target="_blank" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about-us" class="about-us">
+        <div class="row">
+            <div class="col content-col">
+                <h1>About Us</h1>
+                <div class="line"></div>
+                <p>The team consists of 4 experienced students from the University of Crete's Department of Computer Science in Heraklion. </p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./images/img1.png" alt="Yannis Vlachodimos">
+                    <img src="./images/img2.png" alt="Haris Apostolou">
+                    <img src="./images/img3.png" alt="Dimitris Asimakopoulos">
+                    <img src="./images/img4.png" alt="Nikos Barmparousis">
+                    <img src="./images/img5.png" alt="Prof. Panos Trahanias">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <p>Address: 100 N. Plastira str. GR 700 13 Heraklion, Crete, Greece</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+    </script>
+</body>
+</html>
